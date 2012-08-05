@@ -2,31 +2,6 @@
 """
 2011.9.23 CKS
 A simple utility for uploading images to Picasa.
-
-Dependencies:
-
-    sudo apt-get install python-gdata
-    sudo easy_install lockfile
-    
-Usage examples:
-
-    picasa_utils.py --notify_emails "/tmp/photos/00001.jpg"
-    picasa_utils.py --notify_emails_on_album_creation --album_name="My Album $(date +'%F')" --directory="/tmp/photos"
-
-In order to send emails, you'll need to define this in your ~/.bash_aliases:
-
-    export SMTPSERVER=smtp.mydomain.com
-    export SMTPPORT=587
-    export SMTPUSER=username@mydomain.com
-    export SMTPPASS="my super secret password"
-    export SMTPTOADDRS=username_to_be_notified@mydomain.com
-
-References:
-
-    http://gdata-python-client.googlecode.com/hg/pydocs/gdata.photos.service.html
-    http://code.google.com/apis/picasaweb/docs/1.0/developers_guide_python.html
-    http://www.daniweb.com/software-development/python/threads/280403
-    http://icodesnip.com/snippet/python/flickr-to-picasa-migration-tool
 """
 import os
 import dircache
