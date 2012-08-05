@@ -39,6 +39,12 @@ To upload all images in a directory, while deleting the originals and notifying 
 
     picasa_utils.py --delete_original --album_name="My Album $(date +'%%F')" --directory="/tmp/photos"
 
+To permanently delete ALL albums and photos in your Picasa account, which Google provides no easy way to do through the UI, simply run:
+
+::
+
+    picasa_utils.py --delete_all_albums
+
 To see all options, run:
 
 ::
